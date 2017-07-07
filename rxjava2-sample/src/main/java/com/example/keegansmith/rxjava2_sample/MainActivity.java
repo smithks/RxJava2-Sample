@@ -4,6 +4,7 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         Log.v(this.getClass().getSimpleName(),"Assigning observer from "+Thread.currentThread().getName());
         Observable.just(1,2,3)
                 .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(observer);
 
     }
