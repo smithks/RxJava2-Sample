@@ -38,11 +38,11 @@ public class CheeseSearchEngine {
   public List<String> search(String query) {
     query = query.toLowerCase();
 
-    try {
-      Thread.sleep(2000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
+//    try {
+//      Thread.sleep(2000);
+//    } catch (InterruptedException e) {
+//      e.printStackTrace();
+//    }
 
     List<String> result = new LinkedList<>();
 
