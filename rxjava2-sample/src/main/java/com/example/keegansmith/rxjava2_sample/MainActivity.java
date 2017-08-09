@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
+    //Test commit
+    //ADding some stuff yo
     //This is a new commit ayoooooooo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
